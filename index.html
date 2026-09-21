@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,6 +14,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<!-- ==========================================
+     META PIXEL
+=========================================== -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{
+    if(f.fbq)return;
+
+    n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+    };
+
+    if(!f._fbq)f._fbq=n;
+
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s);
+
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '28329584973367462');
+fbq('track', 'PageView');
+</script>
+
+<!-- End Meta Pixel Code -->
+
 
 <style>
 
@@ -106,6 +148,7 @@ p{
     font-size:1.05rem;
 }
 
+
 /* ===========================
    HEADER
 =========================== */
@@ -153,6 +196,7 @@ p{
     transform:translateY(-2px);
 }
 
+
 /* ===========================
    HERO
 =========================== */
@@ -164,6 +208,7 @@ p{
     align-items:center;
     padding:90px 0;
     overflow:hidden;
+
     background:
         radial-gradient(circle at 80% 20%,rgba(227,28,37,.16),transparent 30%),
         radial-gradient(circle at 15% 75%,rgba(227,28,37,.08),transparent 35%),
@@ -278,7 +323,10 @@ p{
     margin-top:12px;
 }
 
-/* PRODUCT */
+
+/* ===========================
+   PRODUCT
+=========================== */
 
 .product-wrap{
     position:relative;
@@ -301,7 +349,11 @@ p{
     padding:20px;
     border-radius:25px;
     border:1px solid var(--border);
-    background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.015));
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.06),
+        rgba(255,255,255,.015)
+    );
     box-shadow:0 35px 80px rgba(0,0,0,.5);
 }
 
@@ -309,6 +361,7 @@ p{
     width:100%;
     border-radius:16px;
 }
+
 
 /* ===========================
    TRUST STRIP
@@ -336,6 +389,7 @@ p{
     gap:8px;
     align-items:center;
 }
+
 
 /* ===========================
    PROBLEM SECTION
@@ -398,14 +452,19 @@ p{
     margin-bottom:3px;
 }
 
+
 /* ===========================
    TRANSITION
 =========================== */
 
 .transition{
     text-align:center;
+
     background:
-        linear-gradient(rgba(227,28,37,.08),rgba(227,28,37,.02)),
+        linear-gradient(
+            rgba(227,28,37,.08),
+            rgba(227,28,37,.02)
+        ),
         var(--dark);
 }
 
@@ -422,6 +481,7 @@ p{
     font-size:1.08rem;
     margin:25px 0 35px;
 }
+
 
 /* ===========================
    WHAT YOU GET
@@ -473,6 +533,7 @@ p{
     font-size:.89rem;
 }
 
+
 /* ===========================
    ROADMAP
 =========================== */
@@ -501,7 +562,12 @@ p{
     top:65px;
     bottom:0;
     width:1px;
-    background:linear-gradient(var(--red),rgba(227,28,37,.08));
+
+    background:
+        linear-gradient(
+            var(--red),
+            rgba(227,28,37,.08)
+        );
 }
 
 .step-num{
@@ -529,6 +595,7 @@ p{
 .step-content h3{
     margin-bottom:8px;
 }
+
 
 /* ===========================
    WHO IT IS FOR
@@ -565,6 +632,7 @@ p{
     display:block;
     margin-bottom:3px;
 }
+
 
 /* ===========================
    PRODUCT PREVIEW
@@ -604,6 +672,7 @@ p{
     color:#d9dde5;
 }
 
+
 /* ===========================
    TESTIMONIALS
 =========================== */
@@ -637,6 +706,7 @@ p{
     color:#838b98;
 }
 
+
 /* ===========================
    VALUE STACK
 =========================== */
@@ -648,9 +718,15 @@ p{
 .value-box{
     max-width:850px;
     margin:auto;
+
     background:
-        radial-gradient(circle at top right,rgba(227,28,37,.12),transparent 40%),
+        radial-gradient(
+            circle at top right,
+            rgba(227,28,37,.12),
+            transparent 40%
+        ),
         var(--card);
+
     border:1px solid rgba(227,28,37,.3);
     border-radius:25px;
     padding:50px;
@@ -686,13 +762,18 @@ p{
     color:var(--red);
 }
 
+
 /* ===========================
    OFFER
 =========================== */
 
 .offer{
     background:
-        radial-gradient(circle at 50% 0%,rgba(227,28,37,.14),transparent 40%),
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(227,28,37,.14),
+            transparent 40%
+        ),
         var(--dark-2);
 }
 
@@ -749,6 +830,7 @@ p{
     color:#777f8b;
 }
 
+
 /* ===========================
    FAQ
 =========================== */
@@ -796,15 +878,22 @@ details p{
     font-size:.9rem;
 }
 
+
 /* ===========================
    FINAL CTA
 =========================== */
 
 .final{
     text-align:center;
+
     background:
-        radial-gradient(circle at center,rgba(227,28,37,.17),transparent 42%),
+        radial-gradient(
+            circle at center,
+            rgba(227,28,37,.17),
+            transparent 42%
+        ),
         #090b0f;
+
     border-top:1px solid var(--border);
 }
 
@@ -821,6 +910,7 @@ details p{
     font-size:1.05rem;
     margin:22px 0 32px;
 }
+
 
 /* ===========================
    FOOTER
@@ -840,6 +930,7 @@ footer p{
     color:#656d78;
 }
 
+
 /* ===========================
    STICKY MOBILE CTA
 =========================== */
@@ -848,8 +939,9 @@ footer p{
     display:none;
 }
 
+
 /* ===========================
-   RESPONSIVE
+   TABLET RESPONSIVE
 =========================== */
 
 @media(max-width:900px){
@@ -889,13 +981,35 @@ footer p{
     .testimonial-grid{
         grid-template-columns:repeat(2,1fr);
     }
-
 }
+
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
 
 @media(max-width:650px){
 
     body{
         padding-bottom:75px;
+    }
+
+    .container{
+        width:min(100% - 32px,1120px);
+    }
+
+    section{
+        padding:58px 0;
+    }
+
+    h2{
+        font-size:clamp(1.75rem,8vw,2.25rem);
+        line-height:1.16;
+    }
+
+    .section-intro{
+        font-size:.94rem;
+        margin-bottom:34px;
     }
 
     .nav{
@@ -908,22 +1022,121 @@ footer p{
 
     .hero{
         min-height:auto;
-        padding:65px 0 75px;
+        padding:48px 0 58px;
+        text-align:center;
+    }
+
+    .hero-grid{
+        gap:38px;
     }
 
     .hero h1{
-        letter-spacing:-1.5px;
+        font-size:clamp(2.25rem,11vw,3.15rem);
+        line-height:1.04;
+        letter-spacing:-1.6px;
+        margin-bottom:20px;
+    }
+
+    .hero-sub{
+        font-size:.98rem;
+        line-height:1.65;
+        margin-bottom:25px;
+    }
+
+    .eyebrow{
+        font-size:.68rem;
+        padding:7px 11px;
+        margin-bottom:18px;
+    }
+
+    .hero-points{
+        gap:10px;
+        margin-bottom:26px;
+    }
+
+    .hero-point{
+        font-size:.88rem;
+        line-height:1.5;
+    }
+
+    .cta{
+        width:100%;
+        padding:16px 20px;
+        font-size:.88rem;
+    }
+
+    .microcopy{
+        text-align:center;
+    }
+
+    .product-wrap{
+        margin-top:4px;
+    }
+
+    .product-card{
+        width:min(330px,88vw);
+        padding:12px;
+        border-radius:19px;
+    }
+
+    .product-card img{
+        border-radius:12px;
+    }
+
+    .trust-strip{
+        padding:18px 0;
+    }
+
+    .trust-items{
+        gap:12px 18px;
+        font-size:.72rem;
+    }
+
+    .problem-grid,
+    .preview-grid{
+        gap:38px;
+    }
+
+    .problem-box{
+        padding:23px 20px;
+    }
+
+    .problem-item{
+        padding:14px 0;
+    }
+
+    .problem-item p,
+    .card p,
+    .audience-item p,
+    .step-content p{
+        font-size:.84rem;
     }
 
     .cards,
-    .testimonial-grid,
     .audience-grid{
         grid-template-columns:1fr;
+    }
+
+    .cards{
+        gap:13px;
+    }
+
+    .card{
+        padding:22px 20px;
+    }
+
+    .card-number{
+        margin-bottom:14px;
+    }
+
+    .steps{
+        margin-top:36px;
     }
 
     .step{
         grid-template-columns:52px 1fr;
         gap:15px;
+        padding-bottom:24px;
     }
 
     .step-num{
@@ -938,15 +1151,88 @@ footer p{
         top:48px;
     }
 
+    .step-content{
+        padding:20px 18px;
+    }
+
+    .audience-grid{
+        gap:12px;
+    }
+
+    .audience-item{
+        padding:20px 18px;
+    }
+
+    .preview-image{
+        padding:10px;
+    }
+
+
+    /* MOBILE TESTIMONIAL SLIDER */
+
+    .testimonial-grid{
+        display:flex;
+        overflow-x:auto;
+        scroll-snap-type:x mandatory;
+        gap:14px;
+        padding:2px 2px 15px;
+        scrollbar-width:none;
+    }
+
+    .testimonial-grid::-webkit-scrollbar{
+        display:none;
+    }
+
+    .testimonial{
+        flex:0 0 84%;
+        scroll-snap-align:center;
+        padding:9px;
+    }
+
+    .testimonial-caption{
+        padding:11px 7px 4px;
+    }
+
+
     .value-box,
     .offer-box{
         padding:35px 22px;
+        border-radius:18px;
     }
 
     .value-row{
         flex-direction:column;
         gap:5px;
     }
+
+    .price{
+        font-size:clamp(3rem,16vw,4.2rem);
+    }
+
+    .faq-wrap{
+        margin-top:32px;
+    }
+
+    summary{
+        padding:18px;
+        font-size:.9rem;
+    }
+
+    details p{
+        padding:0 18px 18px;
+        font-size:.84rem;
+    }
+
+    .final p{
+        font-size:.94rem;
+    }
+
+    footer{
+        padding-bottom:105px;
+    }
+
+
+    /* STICKY PURCHASE BUTTON */
 
     .mobile-sticky{
         display:block;
@@ -976,85 +1262,75 @@ footer p{
 }
 
 
-/* ===========================
-   MOBILE CONVERSION OPTIMIZATION
-=========================== */
-@media(max-width:650px){
-    .container{width:min(100% - 32px,1120px);}
-    section{padding:58px 0;}
-    h2{font-size:clamp(1.75rem,8vw,2.25rem);line-height:1.16;}
-    .section-intro{font-size:.94rem;margin-bottom:34px;}
-    .hero{padding:48px 0 58px;}
-    .hero-grid{gap:38px;}
-    .hero h1{font-size:clamp(2.25rem,11vw,3.15rem);line-height:1.04;letter-spacing:-1.6px;margin-bottom:20px;}
-    .hero-sub{font-size:.98rem;line-height:1.65;margin-bottom:25px;}
-    .eyebrow{font-size:.68rem;padding:7px 11px;margin-bottom:18px;}
-    .hero-points{gap:10px;margin-bottom:26px;}
-    .hero-point{font-size:.88rem;line-height:1.5;}
-    .cta{width:100%;padding:16px 20px;font-size:.88rem;}
-    .microcopy{text-align:center;}
-    .product-wrap{margin-top:4px;}
-    .product-card{width:min(330px,88vw);padding:12px;border-radius:19px;}
-    .product-card img{border-radius:12px;}
-    .trust-strip{padding:18px 0;}
-    .trust-items{gap:12px 18px;font-size:.72rem;}
-    .problem-grid,.preview-grid{gap:38px;}
-    .problem-box{padding:23px 20px;}
-    .problem-item{padding:14px 0;}
-    .problem-item p,.card p,.audience-item p,.step-content p{font-size:.84rem;}
-    .cards{gap:13px;}
-    .card{padding:22px 20px;}
-    .card-number{margin-bottom:14px;}
-    .steps{margin-top:36px;}
-    .step{padding-bottom:24px;}
-    .step-content{padding:20px 18px;}
-    .audience-grid{gap:12px;}
-    .audience-item{padding:20px 18px;}
-    .preview-image{padding:10px;}
-    .testimonial-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:2px 2px 15px;scrollbar-width:none;}
-    .testimonial-grid::-webkit-scrollbar{display:none;}
-    .testimonial{flex:0 0 84%;scroll-snap-align:center;padding:9px;}
-    .testimonial-caption{padding:11px 7px 4px;}
-    .value-box,.offer-box{border-radius:18px;}
-    .price{font-size:clamp(3rem,16vw,4.2rem);}
-    .faq-wrap{margin-top:32px;}
-    summary{padding:18px;font-size:.9rem;}
-    details p{padding:0 18px 18px;font-size:.84rem;}
-    .final p{font-size:.94rem;}
-    footer{padding-bottom:105px;}
-}
-
 @media(max-width:380px){
-    .container{width:min(100% - 24px,1120px);}
-    .hero h1{font-size:2.12rem;}
-    .mobile-sticky{padding:8px 10px;}
-    .mobile-sticky a{padding:14px 10px;font-size:.82rem;}
+
+    .container{
+        width:min(100% - 24px,1120px);
+    }
+
+    .hero h1{
+        font-size:2.12rem;
+    }
+
+    .mobile-sticky{
+        padding:8px 10px;
+    }
+
+    .mobile-sticky a{
+        padding:14px 10px;
+        font-size:.82rem;
+    }
 }
 
 </style>
+
 </head>
 
+
 <body>
+
+
+<!-- ==========================================
+     META PIXEL NOSCRIPT FALLBACK
+=========================================== -->
+
+<noscript>
+    <img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=28329584973367462&ev=PageView&noscript=1"
+        alt=""
+    >
+</noscript>
+
 
 <!-- ================= HEADER ================= -->
 
 <header class="header">
+
     <div class="container nav">
+
         <div class="logo">
             HECELYN <span>GLOBAL</span>
         </div>
 
-        <a class="nav-btn"
-           href="https://selar.com/043681i6m5">
+        <a
+            class="nav-btn"
+            href="https://selar.com/043681i6m5"
+        >
             GET INSTANT ACCESS
         </a>
+
     </div>
+
 </header>
 
 
 <!-- ================= HERO ================= -->
 
 <section class="hero">
+
     <div class="container hero-grid">
 
         <div>
@@ -1074,6 +1350,7 @@ footer p{
                 prepare the right documents, plan their finances and approach
                 the relocation process with greater clarity.
             </p>
+
 
             <div class="hero-points">
 
@@ -1099,10 +1376,14 @@ footer p{
 
             </div>
 
-            <a class="cta"
-               href="https://selar.com/043681i6m5">
+
+            <a
+                class="cta"
+                href="https://selar.com/043681i6m5"
+            >
                 GET INSTANT ACCESS
             </a>
+
 
             <span class="microcopy">
                 One-time payment • Digital guide • Instant access
@@ -1110,33 +1391,43 @@ footer p{
 
         </div>
 
+
         <div class="product-wrap">
 
             <div class="product-glow"></div>
 
             <div class="product-card">
+
                 <img
                     src="images/ChatGPT Image Sep 17, 2026, 03_02_33 PM.png"
-                    alt="Canada Relocation Blueprint">
+                    alt="Canada Relocation Blueprint"
+                >
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 
 <!-- ================= TRUST ================= -->
 
 <div class="trust-strip">
+
     <div class="container trust-items">
 
         <span>🇨🇦 Canada Focused</span>
+
         <span>✓ Beginner Friendly</span>
+
         <span>✓ Step-by-Step</span>
+
         <span>✓ Digital Access</span>
 
     </div>
+
 </div>
 
 
@@ -1159,69 +1450,107 @@ footer p{
 
             <p>
                 You search online and one person tells you Express Entry.
-                Another says PNP. Someone else tells you to study in Canada.
-                Then another person gives you completely different advice.
+                Another says PNP. Someone else gives you completely different
+                advice. Before long, it becomes difficult to know which
+                information actually applies to your situation.
             </p>
 
             <br>
 
             <p>
-                Before long, you have watched dozens of videos, saved countless
-                posts and joined multiple groups — but you still don't know
-                exactly where to start.
+                You may have watched dozens of videos, saved countless posts
+                and joined multiple groups — but you still don't know exactly
+                where to start.
             </p>
 
         </div>
 
+
         <div class="problem-box">
 
             <div class="problem-item">
+
                 <span class="x">×</span>
+
                 <div>
-                    <strong>Too Much Conflicting Information</strong>
+
+                    <strong>
+                        Too Much Conflicting Information
+                    </strong>
+
                     <p>
                         Different videos and posts often leave beginners
                         more confused than when they started.
                     </p>
+
                 </div>
+
             </div>
 
+
             <div class="problem-item">
+
                 <span class="x">×</span>
+
                 <div>
-                    <strong>No Clear Starting Point</strong>
+
+                    <strong>
+                        No Clear Starting Point
+                    </strong>
+
                     <p>
                         You know you want to relocate, but don't know which
                         pathway to research first.
                     </p>
+
                 </div>
+
             </div>
 
+
             <div class="problem-item">
+
                 <span class="x">×</span>
+
                 <div>
-                    <strong>Fear of Expensive Mistakes</strong>
+
+                    <strong>
+                        Fear of Expensive Mistakes
+                    </strong>
+
                     <p>
                         Immigration decisions can involve significant money,
                         documents and time.
                     </p>
+
                 </div>
+
             </div>
 
+
             <div class="problem-item">
+
                 <span class="x">×</span>
+
                 <div>
-                    <strong>Information Overload</strong>
+
+                    <strong>
+                        Information Overload
+                    </strong>
+
                     <p>
                         Government websites can contain a lot of information
                         when you don't yet understand the terminology.
                     </p>
+
                 </div>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 
@@ -1237,7 +1566,9 @@ footer p{
 
         <h2>
             What If You Had The Process
-            <span class="red">Explained Step By Step?</span>
+            <span class="red">
+                Explained Step By Step?
+            </span>
         </h2>
 
         <p>
@@ -1247,12 +1578,15 @@ footer p{
             for life in Canada.
         </p>
 
-        <a class="cta"
-           href="https://selar.com/043681i6m5">
+        <a
+            class="cta"
+            href="https://selar.com/043681i6m5"
+        >
             GET INSTANT ACCESS
         </a>
 
     </div>
+
 </section>
 
 
@@ -1270,7 +1604,9 @@ footer p{
 
             <h2>
                 Everything You Need To
-                <span class="red">Get Started.</span>
+                <span class="red">
+                    Get Started.
+                </span>
             </h2>
 
             <p class="section-intro">
@@ -1281,65 +1617,122 @@ footer p{
 
         </div>
 
+
         <div class="cards">
 
+
             <div class="card">
-                <div class="card-number">01</div>
-                <h3>Canada Immigration Pathways</h3>
+
+                <div class="card-number">
+                    01
+                </div>
+
+                <h3>
+                    Canada Immigration Pathways
+                </h3>
+
                 <p>
                     Understand the major routes people explore when considering
                     relocation to Canada.
                 </p>
+
             </div>
 
+
             <div class="card">
-                <div class="card-number">02</div>
-                <h3>Express Entry Explained</h3>
+
+                <div class="card-number">
+                    02
+                </div>
+
+                <h3>
+                    Express Entry Explained
+                </h3>
+
                 <p>
                     Understand how the Express Entry system works and the
                     important factors involved.
                 </p>
+
             </div>
 
+
             <div class="card">
-                <div class="card-number">03</div>
-                <h3>Provincial Nominee Programs</h3>
+
+                <div class="card-number">
+                    03
+                </div>
+
+                <h3>
+                    Provincial Nominee Programs
+                </h3>
+
                 <p>
                     Learn what PNPs are and why provinces can play an important
                     role in Canadian immigration.
                 </p>
+
             </div>
 
+
             <div class="card">
-                <div class="card-number">04</div>
-                <h3>Document Preparation</h3>
+
+                <div class="card-number">
+                    04
+                </div>
+
+                <h3>
+                    Document Preparation
+                </h3>
+
                 <p>
                     Get a clearer idea of the documents commonly involved
                     in the immigration planning process.
                 </p>
+
             </div>
 
+
             <div class="card">
-                <div class="card-number">05</div>
-                <h3>Financial Planning</h3>
+
+                <div class="card-number">
+                    05
+                </div>
+
+                <h3>
+                    Financial Planning
+                </h3>
+
                 <p>
                     Understand important expenses and financial considerations
                     before beginning your journey.
                 </p>
+
             </div>
 
+
             <div class="card">
-                <div class="card-number">06</div>
-                <h3>Arrival Preparation</h3>
+
+                <div class="card-number">
+                    06
+                </div>
+
+                <h3>
+                    Arrival Preparation
+                </h3>
+
                 <p>
                     Learn important things to consider when preparing for
                     your first days and weeks in Canada.
                 </p>
+
             </div>
+
 
         </div>
 
     </div>
+
 </section>
 
 
@@ -1348,6 +1741,7 @@ footer p{
 <section class="roadmap">
 
     <div class="container">
+
 
         <div class="center">
 
@@ -1358,110 +1752,171 @@ footer p{
             <h2>
                 From “I Want To Move”
                 <br>
-                To <span class="red">“I Know My Next Step.”</span>
+                To
+                <span class="red">
+                    “I Know My Next Step.”
+                </span>
             </h2>
 
         </div>
 
+
         <div class="steps">
+
 
             <div class="step">
 
-                <div class="step-num">1</div>
+                <div class="step-num">
+                    1
+                </div>
 
                 <div class="step-content">
-                    <h3>Understand Your Options</h3>
+
+                    <h3>
+                        Understand Your Options
+                    </h3>
+
                     <p>
                         Start by learning about the different Canadian
                         immigration pathways and how they generally work.
                     </p>
+
                 </div>
 
             </div>
 
+
             <div class="step">
 
-                <div class="step-num">2</div>
+                <div class="step-num">
+                    2
+                </div>
 
                 <div class="step-content">
-                    <h3>Assess Your Situation</h3>
+
+                    <h3>
+                        Assess Your Situation
+                    </h3>
+
                     <p>
                         Consider factors such as your age, education,
                         work experience, language ability and family situation.
                     </p>
+
                 </div>
 
             </div>
 
+
             <div class="step">
 
-                <div class="step-num">3</div>
+                <div class="step-num">
+                    3
+                </div>
 
                 <div class="step-content">
-                    <h3>Prepare Your Documents</h3>
+
+                    <h3>
+                        Prepare Your Documents
+                    </h3>
+
                     <p>
                         Understand which documents may be required and begin
                         preparing them early.
                     </p>
+
                 </div>
 
             </div>
 
+
             <div class="step">
 
-                <div class="step-num">4</div>
+                <div class="step-num">
+                    4
+                </div>
 
                 <div class="step-content">
-                    <h3>Plan Your Finances</h3>
+
+                    <h3>
+                        Plan Your Finances
+                    </h3>
+
                     <p>
                         Understand the potential costs involved and prepare
                         financially before committing to the process.
                     </p>
+
                 </div>
 
             </div>
 
+
             <div class="step">
 
-                <div class="step-num">5</div>
+                <div class="step-num">
+                    5
+                </div>
 
                 <div class="step-content">
-                    <h3>Follow The Appropriate Process</h3>
+
+                    <h3>
+                        Follow The Appropriate Process
+                    </h3>
+
                     <p>
                         Once you understand the pathway relevant to your
                         situation, use official Canadian government resources
                         to verify current requirements and proceed.
                     </p>
+
                 </div>
 
             </div>
 
+
             <div class="step">
 
-                <div class="step-num">6</div>
+                <div class="step-num">
+                    6
+                </div>
 
                 <div class="step-content">
-                    <h3>Prepare For Your Move</h3>
+
+                    <h3>
+                        Prepare For Your Move
+                    </h3>
+
                     <p>
                         Plan for settlement, accommodation, essential
                         documentation and your first weeks in Canada.
                     </p>
+
                 </div>
 
             </div>
 
+
         </div>
 
-        <div class="center" style="margin-top:25px;">
 
-            <a class="cta"
-               href="https://selar.com/043681i6m5">
+        <div
+            class="center"
+            style="margin-top:25px;"
+        >
+
+            <a
+                class="cta"
+                href="https://selar.com/043681i6m5"
+            >
                 GET INSTANT ACCESS
             </a>
 
         </div>
 
+
     </div>
+
 </section>
 
 
@@ -1471,6 +1926,7 @@ footer p{
 
     <div class="container">
 
+
         <div class="center">
 
             <div class="problem-label">
@@ -1479,7 +1935,9 @@ footer p{
 
             <h2>
                 Built For Nigerians
-                <span class="red">Planning Canada.</span>
+                <span class="red">
+                    Planning Canada.
+                </span>
             </h2>
 
             <p class="section-intro">
@@ -1490,55 +1948,103 @@ footer p{
 
         </div>
 
+
         <div class="audience-grid">
 
+
             <div class="audience-item">
-                <span class="audience-icon">✓</span>
+
+                <span class="audience-icon">
+                    ✓
+                </span>
+
                 <div>
-                    <strong>Singles</strong>
+
+                    <strong>
+                        Singles
+                    </strong>
+
                     <p>
                         Exploring Canadian immigration and looking for
                         a clearer understanding of the process.
                     </p>
+
                 </div>
+
             </div>
 
+
             <div class="audience-item">
-                <span class="audience-icon">✓</span>
+
+                <span class="audience-icon">
+                    ✓
+                </span>
+
                 <div>
-                    <strong>Families</strong>
+
+                    <strong>
+                        Families
+                    </strong>
+
                     <p>
                         Planning relocation while considering spouses,
                         children and family settlement.
                     </p>
+
                 </div>
+
             </div>
 
+
             <div class="audience-item">
-                <span class="audience-icon">✓</span>
+
+                <span class="audience-icon">
+                    ✓
+                </span>
+
                 <div>
-                    <strong>Professionals</strong>
+
+                    <strong>
+                        Professionals
+                    </strong>
+
                     <p>
                         Looking to understand skilled immigration options
                         and how their profile may fit Canadian pathways.
                     </p>
+
                 </div>
+
             </div>
 
+
             <div class="audience-item">
-                <span class="audience-icon">✓</span>
+
+                <span class="audience-icon">
+                    ✓
+                </span>
+
                 <div>
-                    <strong>Healthcare Professionals</strong>
+
+                    <strong>
+                        Healthcare Professionals
+                    </strong>
+
                     <p>
                         Nurses, doctors and other professionals beginning
                         their Canada relocation research.
                     </p>
+
                 </div>
+
             </div>
+
 
         </div>
 
+
     </div>
+
 </section>
 
 
@@ -1548,15 +2054,16 @@ footer p{
 
     <div class="container preview-grid">
 
-        <div class="preview-image">
 
-            <!-- Replace this file with your actual preview image -->
+        <div class="preview-image">
 
             <img
                 src="images/ChatGPT Image Sep 17, 2026, 03_02_33 PM.png"
-                alt="Canada Relocation Blueprint Preview">
+                alt="Canada Relocation Blueprint Preview"
+            >
 
         </div>
+
 
         <div>
 
@@ -1566,7 +2073,9 @@ footer p{
 
             <h2>
                 Simple Enough For A
-                <span class="red">Beginner To Follow.</span>
+                <span class="red">
+                    Beginner To Follow.
+                </span>
             </h2>
 
             <p>
@@ -1574,6 +2083,7 @@ footer p{
                 before opening the guide. The Blueprint is designed to explain
                 the process in straightforward language.
             </p>
+
 
             <div class="preview-list">
 
@@ -1604,14 +2114,20 @@ footer p{
 
             </div>
 
-            <a class="cta"
-               href="https://selar.com/043681i6m5">
+
+            <a
+                class="cta"
+                href="https://selar.com/043681i6m5"
+            >
                 GET INSTANT ACCESS
             </a>
 
+
         </div>
 
+
     </div>
+
 </section>
 
 
@@ -1621,6 +2137,7 @@ footer p{
 
     <div class="container">
 
+
         <div class="center">
 
             <div class="problem-label">
@@ -1629,7 +2146,9 @@ footer p{
 
             <h2>
                 Real Feedback.
-                <span class="red">Real People.</span>
+                <span class="red">
+                    Real People.
+                </span>
             </h2>
 
             <p class="section-intro">
@@ -1639,65 +2158,60 @@ footer p{
 
         </div>
 
+
         <div class="testimonial-grid">
 
+
             <div class="testimonial">
+
                 <img
                     src="images/Testimonial-1.jpeg"
-                    alt="Customer testimonial">
+                    alt="Customer testimonial"
+                    loading="lazy"
+                >
+
                 <div class="testimonial-caption">
-                    Verified customer feedback
+                    Customer feedback
                 </div>
+
             </div>
 
+
             <div class="testimonial">
+
                 <img
                     src="images/Testimonial-2.jpeg"
-                    alt="Customer testimonial">
+                    alt="Customer testimonial"
+                    loading="lazy"
+                >
+
                 <div class="testimonial-caption">
-                    Verified customer feedback
+                    Customer feedback
                 </div>
+
             </div>
 
+
             <div class="testimonial">
+
                 <img
                     src="images/Testimonial 1.jpeg"
-                    alt="Customer testimonial">
+                    alt="Customer testimonial"
+                    loading="lazy"
+                >
+
                 <div class="testimonial-caption">
-                    Verified customer feedback
+                    Customer feedback
                 </div>
+
             </div>
 
-            <div class="testimonial">
-                <img
-                    src="images/testimonial-4.jpg"
-                    alt="Customer testimonial">
-                <div class="testimonial-caption">
-                    Verified customer feedback
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <img
-                    src="images/testimonial-5.jpg"
-                    alt="Customer testimonial">
-                <div class="testimonial-caption">
-                    Verified customer feedback
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <img
-                    src="images/testimonial-6.jpg"
-                    alt="Customer testimonial">
-                <div class="testimonial-caption">
-                    Verified customer feedback
-                </div>
-            </div>
 
         </div>
 
+
     </div>
+
 </section>
 
 
@@ -1707,6 +2221,7 @@ footer p{
 
     <div class="container">
 
+
         <div class="center">
 
             <div class="problem-label">
@@ -1715,7 +2230,9 @@ footer p{
 
             <h2>
                 One Guide.
-                <span class="red">A Clearer Starting Point.</span>
+                <span class="red">
+                    A Clearer Starting Point.
+                </span>
             </h2>
 
             <p class="section-intro">
@@ -1725,95 +2242,177 @@ footer p{
 
         </div>
 
+
         <div class="value-box">
 
-            <div class="value-row">
-                <strong>Canada Immigration Pathway Guide</strong>
-                <span>Included</span>
-            </div>
 
             <div class="value-row">
-                <strong>Express Entry Breakdown</strong>
-                <span>Included</span>
+
+                <strong>
+                    Canada Immigration Pathway Guide
+                </strong>
+
+                <span>
+                    Included
+                </span>
+
             </div>
 
-            <div class="value-row">
-                <strong>PNP Overview</strong>
-                <span>Included</span>
-            </div>
 
             <div class="value-row">
-                <strong>Document Preparation Guide</strong>
-                <span>Included</span>
+
+                <strong>
+                    Express Entry Breakdown
+                </strong>
+
+                <span>
+                    Included
+                </span>
+
             </div>
 
-            <div class="value-row">
-                <strong>Financial Planning Guidance</strong>
-                <span>Included</span>
-            </div>
 
             <div class="value-row">
-                <strong>Arrival & Settlement Preparation</strong>
-                <span>Included</span>
+
+                <strong>
+                    PNP Overview
+                </strong>
+
+                <span>
+                    Included
+                </span>
+
             </div>
+
+
+            <div class="value-row">
+
+                <strong>
+                    Document Preparation Guide
+                </strong>
+
+                <span>
+                    Included
+                </span>
+
+            </div>
+
+
+            <div class="value-row">
+
+                <strong>
+                    Financial Planning Guidance
+                </strong>
+
+                <span>
+                    Included
+                </span>
+
+            </div>
+
+
+            <div class="value-row">
+
+                <strong>
+                    Arrival & Settlement Preparation
+                </strong>
+
+                <span>
+                    Included
+                </span>
+
+            </div>
+
 
             <div class="value-total">
-                <span>Your Access Today</span>
-                <span>₦8,999</span>
+
+                <span>
+                    Your Access Today
+                </span>
+
+                <span>
+                    ₦8,999
+                </span>
+
             </div>
+
 
         </div>
 
+
     </div>
+
 </section>
 
 
 <!-- ================= OFFER ================= -->
 
-<section class="offer" id="get-access">
+<section
+    class="offer"
+    id="get-access"
+>
 
     <div class="container">
 
         <div class="offer-box">
 
+
             <div class="offer-label">
                 GET THE CANADA RELOCATION BLUEPRINT
             </div>
 
+
             <h2>
                 Start With
-                <span class="red">Clarity.</span>
+                <span class="red">
+                    Clarity.
+                </span>
             </h2>
 
-            <p style="margin:15px auto 22px;max-width:520px;">
+
+            <p
+                style="
+                    margin:15px auto 22px;
+                    max-width:520px;
+                "
+            >
                 Get instant digital access to the Canada Relocation Blueprint
                 and start understanding your relocation options today.
             </p>
+
 
             <div class="old-price">
                 ₦15,000
             </div>
 
+
             <div class="price">
                 ₦8,999
             </div>
+
 
             <p class="price-note">
                 One-time payment. No subscription.
             </p>
 
-            <a class="cta"
-               href="https://selar.com/043681i6m5">
+
+            <a
+                class="cta"
+                href="https://selar.com/043681i6m5"
+            >
                 GET INSTANT ACCESS
             </a>
+
 
             <div class="secure">
                 🔒 Secure checkout powered by Selar
             </div>
 
+
         </div>
 
     </div>
+
 </section>
 
 
@@ -1823,6 +2422,7 @@ footer p{
 
     <div class="container">
 
+
         <div class="center">
 
             <div class="problem-label">
@@ -1831,14 +2431,19 @@ footer p{
 
             <h2>
                 Before You
-                <span class="red">Get Access.</span>
+                <span class="red">
+                    Get Access.
+                </span>
             </h2>
 
         </div>
 
+
         <div class="faq-wrap">
 
+
             <details>
+
                 <summary>
                     What exactly is the Canada Relocation Blueprint?
                 </summary>
@@ -1849,9 +2454,12 @@ footer p{
                     including pathways, documentation, financial preparation
                     and settlement planning.
                 </p>
+
             </details>
 
+
             <details>
+
                 <summary>
                     Is this only for people who have already started an application?
                 </summary>
@@ -1861,9 +2469,12 @@ footer p{
                     still researching Canada and want to understand the process
                     before making major decisions.
                 </p>
+
             </details>
 
+
             <details>
+
                 <summary>
                     Will I receive a physical book?
                 </summary>
@@ -1872,9 +2483,12 @@ footer p{
                     No. The Canada Relocation Blueprint is a digital product
                     that you can access electronically after purchase.
                 </p>
+
             </details>
 
+
             <details>
+
                 <summary>
                     Does buying the guide guarantee Canadian immigration approval?
                 </summary>
@@ -1885,9 +2499,12 @@ footer p{
                     guarantee eligibility, invitation, visa issuance or
                     permanent residence.
                 </p>
+
             </details>
 
+
             <details>
+
                 <summary>
                     Is the Blueprint a replacement for official IRCC information?
                 </summary>
@@ -1898,9 +2515,12 @@ footer p{
                     Government of Canada resources before submitting an
                     immigration application.
                 </p>
+
             </details>
 
+
             <details>
+
                 <summary>
                     How do I get access after payment?
                 </summary>
@@ -1910,11 +2530,15 @@ footer p{
                     download or access instructions provided after successful
                     payment.
                 </p>
+
             </details>
+
 
         </div>
 
+
     </div>
+
 </section>
 
 
@@ -1924,14 +2548,19 @@ footer p{
 
     <div class="container final-inner">
 
+
         <div class="eyebrow">
             Your Canada journey can start with clarity
         </div>
 
+
         <h2>
             Stop Collecting Random Information.
-            <span class="red">Start Building A Plan.</span>
+            <span class="red">
+                Start Building A Plan.
+            </span>
         </h2>
+
 
         <p>
             Get the Canada Relocation Blueprint and give yourself a structured
@@ -1939,16 +2568,22 @@ footer p{
             documents and planning your relocation journey.
         </p>
 
-        <a class="cta"
-           href="https://selar.com/043681i6m5">
+
+        <a
+            class="cta"
+            href="https://selar.com/043681i6m5"
+        >
             GET INSTANT ACCESS
         </a>
+
 
         <span class="microcopy">
             Instant digital access after successful purchase
         </span>
 
+
     </div>
+
 </section>
 
 
@@ -1958,13 +2593,16 @@ footer p{
 
     <div class="container">
 
+
         <div class="logo">
             HECELYN <span>GLOBAL</span>
         </div>
 
+
         <p>
             © 2026 Hecelyn Global Limited. All rights reserved.
         </p>
+
 
         <p>
             The Canada Relocation Blueprint is an independent educational
@@ -1973,11 +2611,13 @@ footer p{
             Canada (IRCC).
         </p>
 
+
         <p>
             Immigration policies, fees, eligibility requirements and programs
             may change. Always confirm current information through official
             Government of Canada sources before making immigration decisions.
         </p>
+
 
     </div>
 
@@ -1993,6 +2633,53 @@ footer p{
     </a>
 
 </div>
+
+
+<!-- ==========================================
+     META INITIATE CHECKOUT TRACKING
+=========================================== -->
+
+<script>
+
+/*
+Tracks every click from this landing page
+to the Selar checkout page.
+
+This DOES NOT fire a Purchase event.
+It only fires when somebody clicks a
+purchase/checkout button.
+*/
+
+document.querySelectorAll(
+    'a[href*="selar.com"]'
+).forEach(function(button){
+
+    button.addEventListener(
+        'click',
+        function(){
+
+            if(typeof fbq === 'function'){
+
+                fbq(
+                    'track',
+                    'InitiateCheckout',
+                    {
+                        content_name:'Canada Relocation Blueprint',
+                        content_type:'product',
+                        value:8999,
+                        currency:'NGN'
+                    }
+                );
+
+            }
+
+        }
+    );
+
+});
+
+</script>
+
 
 </body>
 </html>
